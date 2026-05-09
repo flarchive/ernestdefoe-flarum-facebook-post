@@ -1,0 +1,11 @@
+ernestdefoe-facebook-post:
+  admin:
+    settings:
+      enabled_label: Enable Facebook Auto-Post
+      enabled_help: When enabled, every new discussion will be automatically posted to your Facebook Page.
+      page_id_label: Facebook Page ID
+      page_id_help: "The numeric ID of your Facebook Page (e.g. 123456789). Find it under Page Settings → About."
+      token_label: Page Access Token
+      token_help: "A never-expiring Page Access Token with the 'pages_manage_posts' and 'pages_read_engagement' permissions. Generate one in the Meta Developer Console."
+    permissions:
+      manage_label: Manage Facebook Post settings
