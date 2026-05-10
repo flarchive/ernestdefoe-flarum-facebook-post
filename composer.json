@@ -1,0 +1,27 @@
+{
+    "name": "ernestdefoe/flarum-facebook-post",
+    "description": "Automatically push new Flarum discussion posts to a Facebook Page",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ernestdefoe\\FacebookPost\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Facebook Page Auto-Post",
+            "category": "integration",
+            "icon": {
+                "name": "fab fa-facebook",
+                "backgroundColor": "#1877F2",
+                "color": "#fff"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
