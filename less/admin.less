@@ -1,0 +1,64 @@
+.FacebookTagSelector {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  &-pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  &-name {
+    font-size: 13px;
+  }
+
+  &-empty {
+    color: #888;
+    font-size: 13px;
+  }
+
+  &-status {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #888;
+  }
+}
+
+.ExtensionPage-settings {
+  .facebook-post-preview {
+    margin-bottom: 0.75rem;
+
+    img {
+      max-width: 320px;
+      max-height: 180px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      display: block;
+    }
+  }
+
+  .facebook-post-uploading {
+    font-size: 13px;
+    color: #555;
+  }
+
+  .facebook-post-error {
+    font-size: 13px;
+    color: #c0392b;
+  }
+}
