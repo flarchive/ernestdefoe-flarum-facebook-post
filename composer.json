@@ -1,0 +1,66 @@
+{
+    "name": "ernestdefoe/flarum-facebook-post",
+    "description": "Automatically push new Flarum discussion posts to a Facebook Page",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ernestdefoe",
+            "email": "ernestdefoe@gmail.com"
+        }
+    ],
+    "support": {
+        "forum": "https://discuss.flarum.org/d/39233-facebook-auto-post"
+    },
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "suggest": {
+        "ernestdefoe/og-image": "Optional. Provides a default Open Graph image via the `ernestdefoe-og-image.default_image` setting, used as a fallback when a discussion has no embedded image."
+    },
+    "autoload": {
+        "psr-4": {
+            "Ernestdefoe\\FacebookPost\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ernestdefoe\\FacebookPost\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Facebook Page Auto-Post",
+            "category": "integration",
+            "icon": {
+                "name": "fab fa-facebook",
+                "backgroundColor": "#1877F2",
+                "color": "#fff"
+            }
+        }
+    },
+    "require-dev": {
+        "flarum/markdown": "^2.0",
+        "flarum/phpstan": "^2.0",
+        "flarum/tags": "^2.0",
+        "flarum/testing": "^2.0"
+    },
+    "scripts": {
+        "test": [
+            "@test:integration"
+        ],
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php",
+        "analyse:phpstan": "phpstan analyse"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once.",
+        "analyse:phpstan": "Run static analysis"
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}
